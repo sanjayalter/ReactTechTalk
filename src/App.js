@@ -28,6 +28,7 @@ function App() {
 
   const sidebarLinks = ["Home", "About", "Contact"];
   return (
+  
     <div class="flex flex-col lg:flex-row">
       <div class="">
         <Sidebar />
@@ -41,10 +42,13 @@ function App() {
         </div>
 
         <div>
-          <ContentLayout heading={"UseState"} urls={urls} />
+          <ContentLayout heading={"UseState"} description={"useState is a React Hook that lets you add a state variable to your component. "} urls={urls}  />
         </div>
+
+   
       </div>
     </div>
+  
   );
 }
 

@@ -2,11 +2,15 @@
 import React from "react";
 import Gist from "super-react-gist";
 
-const ContentLayout = ({ heading, urls }) => {
+const ContentLayout = ({ heading,description, urls }) => {
   return (
     <div className="">
-      <h1 className="mb-2 font-semibold	 text-2xl	">{heading}</h1>
+      <h1 className="m-4 font-bold	 text-2xl	">{heading}</h1>
 
+
+<div className="m-4 p-2 font-medium bg-gray-100	 rounded	">
+  <p>{description}</p>
+</div>
       <div>
         {urls.map((item) => (
           <>
