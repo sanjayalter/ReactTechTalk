@@ -1,32 +1,28 @@
-// Button.js
+import * as React from "react";
+import { useTheme } from "../context/ThemeProvider";
 
-import React from 'react';
-import PropTypes from 'prop-types';
-import './Button.css';
-
-const Button = ({ onClick, color, textColor, children }) => {
-  const buttonStyle = {
-    backgroundColor: color,
-    color: textColor,
-  };
+export function SolidButtons({ ClickFun, children }) {
+  const { theme } = useTheme();
 
   return (
-    <button className="custom-button" style={buttonStyle} onClick={onClick}>
-      {children}
-    </button>
+    <div className="flex flex-col space-y-2 md:flex-row md:space-x-2 md:space-y-0">
+      {theme == "light" ? (
+        <button
+          type="button"
+          className="rounded-md border border-black px-3 py-2 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+          onClick={ClickFun}
+        >
+          {children}
+        </button>
+      ) : (
+        <button
+          type="button"
+          className="rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+          onClick={ClickFun}
+        >
+          {children}
+        </button>
+      )}
+    </div>
   );
-};
-
-Button.propTypes = {
-  onClick: PropTypes.func.isRequired,
-  color: PropTypes.string,
-  textColor: PropTypes.string,
-  children: PropTypes.node.isRequired,
-};
-
-Button.defaultProps = {
-  color: '#3498db', // Default color: Blue
-  textColor: '#ffffff', // Default text color: White
-};
-
-export default Button;
+}

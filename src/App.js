@@ -1,36 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
-import Button from './component/Button';
-import Navbar from './component/Navbar';
-import { useState } from 'react';
+import logo from "./logo.svg";
+import "./App.css";
+
+import { useState } from "react";
+import { Sidebar } from "./component/Sidebar";
+
+import { SolidButtons } from "./component/Button";
+import { ContentLayout } from "./component/MainContentLayout";
+import { useTheme } from "./context/ThemeProvider";
 
 function App() {
   const handleClick = () => {
-    console.log('Button clicked!');
+    console.log("Button clicked!");
   };
 
-  const [theme, setTheme] = useState('light');
+  const { theme, toggleTheme } = useTheme();
 
-  const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
-    // Add logic to update your application's theme here
-  };
-
-  const navLinks = [
-    { url: '#home', text: 'Home' },
-    { url: '#about', text: 'About' },
-    { url: '#services', text: 'Services' },
-    { url: '#contact', text: 'Contact' },
+  const gistUrls = [
+    { url: "https://gist.github.com/your_gist_id_1" },
+    { url: "https://gist.github.com/your_gist_id_2" },
+    // Add more URLs as needed
   ];
+
+  const urls = [
+    "https://gist.github.com/sanjay-xdr/1fc6e028007facf496685cfd62bfb44e",
+    "https://gist.github.com/sanjay-xdr/0c8148bc6a0e3a99dbd1d80a844b751b",
+  ];
+
+  const sidebarLinks = ["Home", "About", "Contact"];
   return (
-    <div >
-      {/* <Button onClick={handleClick} color="#e74c3c" textColor="#ffffff">
-        Click me!
-      </Button> */}
+    <div class="flex flex-col lg:flex-row">
+      <div class="">
+        <Sidebar />
+      </div>
 
-<Navbar bgColor="#3498db" textColor="#ffffff" links={navLinks} onThemeToggle={toggleTheme} />
+      <div class="w-full lg:w-3/4 p-4 relative  ">
+        <div class="float-right theme-container mb-10">
+          <SolidButtons ClickFun={toggleTheme}>
+            {theme == "light" ? "Switch To Dark Mode" : "Switch To Light Mode"}{" "}
+          </SolidButtons>
+        </div>
 
-
+        <div>
+          <ContentLayout heading={"UseState"} urls={urls} />
+        </div>
+      </div>
     </div>
   );
 }
