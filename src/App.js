@@ -18,7 +18,7 @@ function App() {
   const gistUrls = [
     { url: "https://gist.github.com/your_gist_id_1" },
     { url: "https://gist.github.com/your_gist_id_2" },
-    // Add more URLs as needed
+    // Add more URLs as needed for following components
   ];
 
   const urls = [
