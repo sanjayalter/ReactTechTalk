@@ -1,5 +1,7 @@
 import { ContentLayout } from "../component/MainContentLayout";
+import { DefaultPage } from "../pages/Defaultpage";
 import { UseStateBlog } from "../pages/UseStateBlog";
+
 
 
 export  const renderComponent = (path) => {
@@ -69,6 +71,6 @@ export  const renderComponent = (path) => {
                                     );
       default:
         // Render a default component or handle the unknown path case
-        return <div>Page not found</div>;
+        return (<DefaultPage/>) ;
     }
   };

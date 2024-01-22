@@ -37,9 +37,9 @@ export const Homepage = () => {
 
       <div class="w-full lg:w-3/4 p-4 relative  ">
         <div class="float-right theme-container mb-10">
-          <SolidButtons ClickFun={toggleTheme}>
+          {/* <SolidButtons ClickFun={toggleTheme}>
             {theme == "light" ? "Switch To Dark Mode" : "Switch To Light Mode"}{" "}
-          </SolidButtons>
+          </SolidButtons> */}
         </div>
 
         <div>{renderComponent(location.pathname)}</div>
