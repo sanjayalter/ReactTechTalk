@@ -11,9 +11,17 @@ export const UseStateBlog = () => {
   return (
     <>
       <div className="m-4 p-2 font-medium bg-gray-900	rounded">
-        <h1 className="text-white">What is State?</h1>
+        <h1 className="text-white">
+            
+         Q.   What is <span className="italic">State?</span></h1>
 
-        <p className="text-white">Components Memory</p>
+         <p className="text-white">
+            
+            Ans.  In React, Component-specific memory is called state.
+            
+            </p>
+
+      
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <iframe
@@ -24,6 +32,29 @@ export const UseStateBlog = () => {
           sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
         ></iframe>
       </div>
+
+
+      <div className="m-4 p-2 font-medium bg-gray-900	rounded">
+       
+
+       <h2 className="text-white text-xl text-red-600">Issues</h2>
+
+       <div>
+        <ul className="list-disc text-white">
+
+            <li>Local variables don't persist between renders</li>
+            <li>Changes to local variables won't trigger renders</li>
+        </ul>
+       </div>
+      
+      </div>
+
+
+
+
+
+
+
     </>
   );
 };
