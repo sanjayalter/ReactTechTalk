@@ -16,9 +16,6 @@ export const UseRefBlog = () => {
                     This component uses a ref to keep track of how many times the button was clicked. Note that it’s okay to use a ref instead of state here because the click count is only read and written in an event handler.
                 </p>
             </div>
-            <div className="m-4 p-2 font-medium bg-gray-900	rounded">
-                <h1 className="text-white">Lets Jump to Code</h1>
-            </div>
             <div style={{ display: "flex", justifyContent: "center" }}>
                 <iframe src="https://codesandbox.io/embed/vzfntc?view=Editor+%2B+Preview"
                     style={iframeStyle}

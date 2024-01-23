@@ -6,6 +6,7 @@ import { UseReducerBlog } from "../pages/useReducerBlog";
 import { UseEffectBlog } from "../pages/useEffectBlog";
 import { UseMemoBlog } from "../pages/useMemoBlog";
 import { UseRefBlog } from "../pages/useRefBlog";
+import { CustomHook } from "../pages/CustomeHook";
 
 export const renderComponent = (path) => {
   switch (path) {
@@ -87,8 +88,15 @@ export const renderComponent = (path) => {
     case "/customHooks":
       return (
         <>
-          {/* please add your useContext data here */}
-          customHooks Here
+          <ContentLayout
+            heading={"Custom Hooks"}
+            description={
+              "Custom Hooks are a mechanism to reuse stateful logic, but every time you use a custom Hook, all state and effects inside of it are fully isolated."
+            }
+            urls={[]}
+          />
+
+          <CustomHook />
         </>
       );
 
