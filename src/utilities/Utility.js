@@ -3,6 +3,9 @@ import { DefaultPage } from "../pages/Defaultpage";
 import { UseStateBlog } from "../pages/UseStateBlog";
 import { UseContextBlog } from "../pages/useContextBlog";
 import { UseReducerBlog } from "../pages/useReducerBlog";
+import { UseEffectBlog } from "../pages/useEffectBlog";
+import { UseMemoBlog } from "../pages/useMemoBlog";
+import { UseRefBlog } from "../pages/useRefBlog";
 
 export const renderComponent = (path) => {
   switch (path) {
@@ -24,8 +27,15 @@ export const renderComponent = (path) => {
     case "/useEffect":
       return (
         <>
-          {/* please add your UseEffect data here */}
-          UseEffect Here
+          <ContentLayout
+            heading={"UseEffect"}
+            description={
+              "useEffect is a React Hook that lets you synchronize a component with an external system."
+            }
+            urls={[]}
+          />
+
+          <UseEffectBlog />
         </>
       );
 
@@ -42,7 +52,7 @@ export const renderComponent = (path) => {
             urls={[]}
           />
 
-        
+
           <UseContextBlog />
         </>
       );
@@ -50,10 +60,10 @@ export const renderComponent = (path) => {
       return (
         <>
           {/* please add your useContext data here */}
-          
-          <ContentLayout heading="useReducer" description="useReducer is a React Hook that lets you manage complex state logic in React applications. It is an alternative to useState." urls={[]}/>
 
-          <UseReducerBlog/>
+          <ContentLayout heading="useReducer" description="useReducer is a React Hook that lets you manage complex state logic in React applications. It is an alternative to useState." urls={[]} />
+
+          <UseReducerBlog />
 
 
 
@@ -62,8 +72,15 @@ export const renderComponent = (path) => {
     case "/useMemo":
       return (
         <>
-          {/* please add your useContext data here */}
-          add useMemo here
+          <ContentLayout
+            heading={"UseMemo"}
+            description={
+              "useMemo is a React Hook that lets you cache the result of a calculation between re-renders."
+            }
+            urls={[]}
+          />
+
+          <UseMemoBlog />
         </>
       );
 
@@ -78,8 +95,15 @@ export const renderComponent = (path) => {
     case "/useRef":
       return (
         <>
-          {/* please add your useContext data here */}
-          useRef Here
+          <ContentLayout
+            heading={"UseRef"}
+            description={
+              "useRef is a React Hook that lets you reference a value that’s not needed for rendering."
+            }
+            urls={[]}
+          />
+
+          <UseRefBlog />
         </>
       );
     default:
