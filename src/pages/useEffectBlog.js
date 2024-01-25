@@ -13,17 +13,13 @@ export const UseEffectBlog = () => {
             <div className="m-4 p-2 font-medium bg-gray-900	rounded">
                 <p className="text-white">It is generally used when you want to avoid unnecessary re-renders of your code each time a state changes, making it more efficient by running the specified side effect only when needed.</p>
             </div>
-            <div style={{ display: "flex", justifyContent: "center" }}>
-                <iframe src="https://codesandbox.io/embed/rx8zj6?view=Editor+%2B+Preview&module=%2Fsrc%2FApp.js"
-                    style={iframeStyle}
-                    title="react.dev"
-                    allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-                    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-                ></iframe>
-            </div>
             <div className="m-4 p-2 font-medium bg-gray-900	rounded">
-                <h1 className="text-white">Clean up code in useEffect</h1>
+                <p className="text-white">Let's understand by little example</p>
             </div>
+
+            <h1 className="m-4 font-bold text-2xl">CleanUp code</h1>
+
+
             <div className="m-4 p-2 font-medium bg-gray-900	rounded">
                 <h1 className="text-white"> Q.   What is <span className="italic">CleanUp</span> code ?</h1>
                 <p className="text-white">
@@ -31,7 +27,7 @@ export const UseEffectBlog = () => {
                 </p>
             </div>
             <div style={{ display: "flex", justifyContent: "center" }}>
-                <iframe src="https://codesandbox.io/embed/zkrpcj?view=Editor+%2B+Preview"
+                <iframe src="https://codesandbox.io/embed/gs96tv?view=Editor+%2B+Preview"
                     style={iframeStyle}
                     title="react.dev"
                     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
