@@ -7,6 +7,7 @@ import { UseEffectBlog } from "../pages/useEffectBlog";
 import { UseMemoBlog } from "../pages/useMemoBlog";
 import { UseRefBlog } from "../pages/useRefBlog";
 import { CustomHook } from "../pages/CustomeHook";
+import { UseCallback } from "../pages/useCallback";
 
 export const renderComponent = (path) => {
   switch (path) {
@@ -97,6 +98,20 @@ export const renderComponent = (path) => {
           />
 
           <CustomHook />
+        </>
+      );
+      case "/useCallback":
+      return (
+        <>
+          <ContentLayout
+            heading={"useCallback"}
+            description={
+              "useCallback is a React Hook that lets you cache a function definition between re-renders."
+            }
+            urls={[]}
+          />
+
+          <UseCallback />
         </>
       );
 

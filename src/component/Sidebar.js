@@ -68,13 +68,6 @@
                     href="#"
                   >
                     <Newspaper className="h-5 w-5" aria-hidden="true" />
-                    <span className="mx-2 text-sm font-medium">Custom Hooks</span>
-                  </a>
-                  <a
-                    className="flex transform items-center rounded-lg px-3 py-2 text-gray-200 transition-colors duration-300 hover:bg-gray-100 hover:text-gray-700"
-                    href="#"
-                  >
-                    <Newspaper className="h-5 w-5" aria-hidden="true" />
                     <span className="mx-2 text-sm font-medium">UseRef</span>
                   </a>
                   <a
@@ -90,6 +83,13 @@
                   >
                     <Newspaper className="h-5 w-5" aria-hidden="true" />
                     <span className="mx-2 text-sm font-medium">useCallback</span>
+                  </a>
+                  <a
+                    className="flex transform items-center rounded-lg px-3 py-2 text-gray-200 transition-colors duration-300 hover:bg-gray-100 hover:text-gray-700"
+                    href="#"
+                  >
+                    <Newspaper className="h-5 w-5" aria-hidden="true" />
+                    <span className="mx-2 text-sm font-medium">Custom Hooks</span>
                   </a>
                 </div>
               </nav>
@@ -143,13 +143,6 @@
 
 
 
-                  <Link
-                    className="flex transform items-center rounded-lg px-3 py-2 text-gray-600 transition-colors duration-300 hover:bg-gray-100 hover:text-gray-700"
-                    to={"/customHooks"}
-                  >
-                    <Newspaper className="h-5 w-5" aria-hidden="true" />
-                    <span className="mx-2 text-sm font-medium">Custom Hooks</span>
-                  </Link>
 
                   <Link
                     className="flex transform items-center rounded-lg px-3 py-2 text-gray-600 transition-colors duration-300 hover:bg-gray-100 hover:text-gray-700"
@@ -165,6 +158,22 @@
                   >
                     <Newspaper className="h-5 w-5" aria-hidden="true" />
                     <span className="mx-2 text-sm font-medium">useMemo</span>
+                  </Link>
+
+                  <Link
+                    className="flex transform items-center rounded-lg px-3 py-2 text-gray-600 transition-colors duration-300 hover:bg-gray-100 hover:text-gray-700"
+                  to={"/useCallback"}
+                  >
+                    <Newspaper className="h-5 w-5" aria-hidden="true" />
+                    <span className="mx-2 text-sm font-medium">useCallback</span>
+                  </Link>
+
+                  <Link
+                    className="flex transform items-center rounded-lg px-3 py-2 text-gray-600 transition-colors duration-300 hover:bg-gray-100 hover:text-gray-700"
+                    to={"/customHooks"}
+                  >
+                    <Newspaper className="h-5 w-5" aria-hidden="true" />
+                    <span className="mx-2 text-sm font-medium">Custom Hooks</span>
                   </Link>
 
                 
