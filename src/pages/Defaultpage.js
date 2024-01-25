@@ -6,7 +6,7 @@ export function DefaultPage() {
     <div className="py-10">
       <div>
         <h1 className="mt-2 text-3xl font-bold tracking-tight text-black sm:text-5xl">
-          React Tech Talk: Mastering React Hooks
+        React Hooks: Getting Hooked on Basics
         </h1>
         <p className="mt-4 font-semibold leading-7 text-gray-600 text-medium	">
           Welcome to our React Tech Talk! Join us for an exciting session on

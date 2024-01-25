@@ -35,6 +35,14 @@ export const UseContextBlog = () => {
 
         </div>
 
+        <div className="m-4 p-2 font-medium bg-gray-900	rounded"> 
+       
+       <div className="text-white">
+       Wouldn’t it be great if there were a way to “teleport” data to the components in the tree that need it without passing props? With React’s context feature, there is! 
+       </div>
+
+        </div>
+
 
 
   
